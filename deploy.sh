@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Define project directory
-PROJECT_DIR="/path/to/your/project"
-LOG_FILE="$PROJECT_DIR/deploy.log"
-PM2_APP_NAME="your_app_name"
+PROJECT_DIR="/home/ubuntu/euri"
+LOG_FILE="$(dirname "$0")/deploy.log"
+PM2_APP_NAME="app"
 
 # Change to project directory
 cd "$PROJECT_DIR" || { echo "Failed to navigate to project directory."; exit 1; }
